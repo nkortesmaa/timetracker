@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>jQuery Mobile page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" /> 
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
+  <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script> 
+</head>
+<body>
+
+<div data-role="page" data-control-title="Home" id="page1">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <h3>
+            TimeTracker
+        </h3>
+    </div>
+    <div data-role="content">
+        <ul class="History" data-role="listview" data-divider-theme="a" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                Today
+            </li>
+            <li data-theme="a">
+                <a href="Entry_x.html" data-transition="slide">
+                    Entry 1
+                    <span class="ui-li-count">
+                        HH:MM
+                    </span>
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="Entry_x.html" data-transition="slide">
+                    Entry 2
+                    <span class="ui-li-count">
+                        HH:MM
+                    </span>
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="Entry_x.html" data-transition="slide">
+                    Entry 3
+                    <span class="ui-li-count">
+                        HH:MM
+                    </span>
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="Entry_x.html" data-transition="slide">
+                    Entry 4
+                    <span class="ui-li-count">
+                        HH:MM
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <div data-role="fieldcontain" data-controltype="textinput">
+            <label for="textinput4">
+                Topic
+            </label>
+            <input name="" id="textinput4" placeholder="Insert title" value="" data-mini="true"
+            type="text">
+        </div>
+        <div data-role="fieldcontain" data-controltype="textinput">
+            <label for="textinput5">
+                Km
+            </label>
+            <input name="" id="textinput5" placeholder="Insert title" value="" data-mini="true"
+            type="text">
+        </div>
+    </div>
+            <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="Home.html" data-transition="flip" data-theme="a" data-icon="edit">
+                        Main
+                    </a>
+                </li>
+                <li>
+                    <a href="MyInfo.html" data-transition="flip" data-theme="a" data-icon="info">
+                        My Information
+                    </a>
+                </li>
+            </ul>
+        </div>
+</div>
+
+</body>
+</html>
